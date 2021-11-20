@@ -1,15 +1,19 @@
 <%- include("partials/header") -%>
+<div class="top">
+<h1 ><u>Jounral</u> </h1>
+<a  href="/compose"><button class="addBtn">+</button></a>
+</div>
 
-<h1>Home</h1>
 <% homeStartingContent.forEach(function(value){ %>
     
     <h3><%= value.title %></h3>
-    <p><%= value.content.substring(0,100)+"..." %>
-         <a href="/posts/<%= value.title %>">Read More</a></p>
+    <p><%= value.post.substring(0,100)+"..." %>
+         <a href="/posts/<%= value._id %>">Read More</a></p>
 
     <% })  %>
  
 <!-- <p> <%= homeStartingContent %></p> -->
+
 
 
 <%- include("partials/footer") -%>
