@@ -6,7 +6,7 @@ const mongoose=require("mongoose");
 const ejs = require("ejs");
 
 //database code
-mongoose.connect("mongodb+srv://vaihbav2001:<Paaword>@cluster0.ih6g9.mongodb.net/jounralDB");
+mongoose.connect("mongodb+srv://vaihbav2001:Vk%4022012021@cluster0.ih6g9.mongodb.net/jounralDB");
 const itemsSchema = new mongoose.Schema({
   title:String,
   post:String
